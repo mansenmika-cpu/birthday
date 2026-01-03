@@ -134,16 +134,16 @@ else:
                 <div class="kiss" style="left: 90%; animation-delay: 0.2s;">💋</div>
                 """, unsafe_allow_html=True)
             
-                
+                st.write("---")
+                st.write("My Love Level for you:")
+                bar = st.progress(0)
+                for percent_complete in range(100):
+                    time.sleep(0.01)
+                    bar.progress(percent_complete + 1)
+                st.write("Error: Love level exceeded 100%! ❤️ 🚀 😂")
+                         
         st.write("I hope you love it as much as I love you.")
-        # 2. The Love Meter Progress Bar
-        st.write("---")
-        st.write("My Love Level for you:")
-        bar = st.progress(0)
-        for percent_complete in range(100):
-            time.sleep(0.01)
-            bar.progress(percent_complete + 1)
-        st.write("Error: Love level exceeded 100%! ❤️ 🚀 😂")
+        
     
   
 
