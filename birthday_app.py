@@ -102,7 +102,7 @@ else:
         And my Kuuchi's psychologist dream 
         will come true easily! 
         Study well my KUUCHI. UMMAAA 😘
-        my Kuuchi the island 1st, I know.
+        my Kuuchi is the island 1st, I know.
         """)
 
     st.write("---")
@@ -146,6 +146,7 @@ else:
         
     
   
+
 
 
 
