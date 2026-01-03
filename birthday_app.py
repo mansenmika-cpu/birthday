@@ -77,7 +77,7 @@ else:
     st.markdown("<h1 class='glow-text'>🎉 HAPPY 21st BIRTHDAY! 🎉</h1>", unsafe_allow_html=True)
     
     # Optional: Add a YouTube link to her favorite song (it will play in the background)
-    st.video("https://www.youtube.com/watch?v=Kz0vK2M9Wsc", start_time=0) # Example: Happy Birthday song
+    st.video("https://www.youtube.com/watch?v=7igP4zdpY6k&list=RD7igP4zdpY6k&start_radio=1", start_time=0) # Example: Happy Birthday song
     
     st.write("---")
     
@@ -114,3 +114,4 @@ else:
         time.sleep(0.01)
         bar.progress(percent_complete + 1)
     st.write("Error: Love level exceeded 100%! ❤️🚀")
+
