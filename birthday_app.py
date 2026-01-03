@@ -105,6 +105,11 @@ else:
     # Interactive "Gift Reveal"
     with st.expander("🕵️‍♀️ WHERE IS YOUR GIFT?"):
         st.write("### Go check the [Location Name] right now!")
+        
+        if st.button("Click for a Birthday Kiss! 💋"):
+            st.balloons() # This will trigger a burst of balloons again
+            st.markdown("### 😘 MUAH! Happy Birthday, Beautiful!")
+            
         st.write("I hope you love it as much as I love you.")
     
     # Progress Bar as a "Love Meter"
@@ -114,4 +119,5 @@ else:
         time.sleep(0.01)
         bar.progress(percent_complete + 1)
     st.write("Error: Love level exceeded 100%! ❤️🚀")
+
 
