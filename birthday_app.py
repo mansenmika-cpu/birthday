@@ -74,7 +74,7 @@ else:
     time.sleep(1) # Small delay for effect
     st.snow()
     
-    st.markdown("<h1 class='glow-text'>🎉 HAPPY 21st BIRTHDAY, My Kuuchiyooooooo! 🎉</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='glow-text'>🎉 HAPPY 21st BIRTHDAY, My Kuuchiyoooo! 🎉</h1>", unsafe_allow_html=True)
     
     # Optional: Add a YouTube link to her favorite song (it will play in the background)
     st.video("https://www.youtube.com/watch?v=7igP4zdpY6k&list=RD7igP4zdpY6k&start_radio=1", start_time=0) # Example: Happy Birthday song
@@ -87,8 +87,8 @@ else:
     with col1:
         st.header("😘 UMMA MY UUUCHI KUUCHI!")
         st.write("""
-        You're officially 21! 
-        I'm so lucky to be by your side 
+        My kuuchi's officially 21! 
+        I'm so lucky to be by my kuuchi's side 
         as you start this new chapter.
         """)
         
@@ -97,17 +97,18 @@ else:
         st.write("""
         I hope today is full of 
         love, laughter, and maybe 
-        some kisses for me. 
-        And your psychologist dream 
+        some kisses for Chuuti Baba. 
+        Sorry Chuuti Matta. 
+        And my Kuuchi's psychologist dream 
         will come true easily! 
         Study well my KUUCHI. UMMAAA 😘
-        You are the island 1st, I know.
+        my Kuuchi the island 1st, I know.
         """)
 
     st.write("---")
     
     # Interactive "Gift Reveal"
-    with st.expander("🕵️‍♀️ WHERE IS YOUR GIFT?"):
+    with st.expander("🕵️‍♀️ WHERE IS Kuuchi's GIFT?"):
         st.write("### Just toady, I am Your Gift, Kuuchiyoo 😘")
         
         if st.button("Click for a Birthday Kiss! 💋"):
@@ -132,16 +133,20 @@ else:
                 <div class="kiss" style="left: 70%; animation-delay: 1.5s;">😘</div>
                 <div class="kiss" style="left: 90%; animation-delay: 0.2s;">💋</div>
                 """, unsafe_allow_html=True)
+            
                 
         st.write("I hope you love it as much as I love you.")
+        # 2. The Love Meter Progress Bar
+        st.write("---")
+        st.write("My Love Level for you:")
+        bar = st.progress(0)
+        for percent_complete in range(100):
+            time.sleep(0.01)
+            bar.progress(percent_complete + 1)
+        st.write("Error: Love level exceeded 100%! ❤️ 🚀 😂")
     
-    # Progress Bar as a "Love Meter"
-    st.write("My Love Level for you:")
-    bar = st.progress(0)
-    for percent_complete in range(100):
-        time.sleep(0.01)
-        bar.progress(percent_complete + 1)
-    st.write("Error: Love level exceeded 100%! ❤️🚀")
+  
+
 
 
 
