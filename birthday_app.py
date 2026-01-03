@@ -74,7 +74,7 @@ else:
     time.sleep(1) # Small delay for effect
     st.snow()
     
-    st.markdown("<h1 class='glow-text'>🎉 HAPPY 21st BIRTHDAY! 🎉</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='glow-text'>🎉 HAPPY 21st BIRTHDAY, My Kuuchioooo! 🎉</h1>", unsafe_allow_html=True)
     
     # Optional: Add a YouTube link to her favorite song (it will play in the background)
     st.video("https://www.youtube.com/watch?v=7igP4zdpY6k&list=RD7igP4zdpY6k&start_radio=1", start_time=0) # Example: Happy Birthday song
@@ -85,7 +85,7 @@ else:
     col1, col2 = st.columns(2)
     
     with col1:
-        st.header("🥂 Cheers!")
+        st.header("😘 UMMA MY UUUCHI KUUCHI!")
         st.write("""
         You're officially 21! 
         I'm so lucky to be by your side 
@@ -97,19 +97,42 @@ else:
         st.write("""
         I hope today is full of 
         love, laughter, and maybe 
-        a few cocktails! 🍸
+        some kisses for me. 
+        And your psychologist dream 
+        will come true easily.! 
+        Study well my KUUCHI. UMMAAA 😘
+        You are the island 1st I know.
         """)
 
     st.write("---")
     
     # Interactive "Gift Reveal"
     with st.expander("🕵️‍♀️ WHERE IS YOUR GIFT?"):
-        st.write("### Go check the [Location Name] right now!")
+        st.write("### Just toady, I am Your Gift")
         
         if st.button("Click for a Birthday Kiss! 💋"):
-            st.balloons() # This will trigger a burst of balloons again
-            st.markdown("### 😘 MUAH! Happy Birthday, Beautiful!")
-            
+            # Custom "Rain of Kisses" Animation
+            st.markdown("""
+                <style>
+                @keyframes kiss-rain {
+                    0% { bottom: -10%; opacity: 1; }
+                    100% { bottom: 110%; opacity: 0; }
+                }
+                .kiss {
+                    position: fixed;
+                    bottom: -10%;
+                    font-size: 24px;
+                    animation: kiss-rain 4s linear infinite;
+                    z-index: 9999;
+                }
+                </style>
+                <div class="kiss" style="left: 10%; animation-delay: 0s;">💋</div>
+                <div class="kiss" style="left: 30%; animation-delay: 1s;">😘</div>
+                <div class="kiss" style="left: 50%; animation-delay: 0.5s;">💋</div>
+                <div class="kiss" style="left: 70%; animation-delay: 1.5s;">😘</div>
+                <div class="kiss" style="left: 90%; animation-delay: 0.2s;">💋</div>
+                """, unsafe_allow_html=True)
+                
         st.write("I hope you love it as much as I love you.")
     
     # Progress Bar as a "Love Meter"
@@ -119,5 +142,6 @@ else:
         time.sleep(0.01)
         bar.progress(percent_complete + 1)
     st.write("Error: Love level exceeded 100%! ❤️🚀")
+
 
 
