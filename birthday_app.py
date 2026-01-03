@@ -74,7 +74,7 @@ else:
     time.sleep(1) # Small delay for effect
     st.snow()
     
-    st.markdown("<h1 class='glow-text'>🎉 HAPPY 21st BIRTHDAY, My Kuuchioooo! 🎉</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='glow-text'>🎉 HAPPY 21st BIRTHDAY, My Kuuchiyooooooo! 🎉</h1>", unsafe_allow_html=True)
     
     # Optional: Add a YouTube link to her favorite song (it will play in the background)
     st.video("https://www.youtube.com/watch?v=7igP4zdpY6k&list=RD7igP4zdpY6k&start_radio=1", start_time=0) # Example: Happy Birthday song
@@ -99,16 +99,16 @@ else:
         love, laughter, and maybe 
         some kisses for me. 
         And your psychologist dream 
-        will come true easily.! 
+        will come true easily! 
         Study well my KUUCHI. UMMAAA 😘
-        You are the island 1st I know.
+        You are the island 1st, I know.
         """)
 
     st.write("---")
     
     # Interactive "Gift Reveal"
     with st.expander("🕵️‍♀️ WHERE IS YOUR GIFT?"):
-        st.write("### Just toady, I am Your Gift")
+        st.write("### Just toady, I am Your Gift, Kuuchiyoo 😘")
         
         if st.button("Click for a Birthday Kiss! 💋"):
             # Custom "Rain of Kisses" Animation
@@ -142,6 +142,7 @@ else:
         time.sleep(0.01)
         bar.progress(percent_complete + 1)
     st.write("Error: Love level exceeded 100%! ❤️🚀")
+
 
 
 
